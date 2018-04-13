@@ -46,7 +46,7 @@ if (cookies != null) {
 </center>
 <% } else {  %>
  <div class="centered">
- <span class=""><a href="/_saml?RelayState=%2F" class="button center">Login</a></span>
+ <span class=""><a href="/_saml?RelayState=%2F" class="button center">Login via Salesforce</a></span>
  </div>
 
 <% } %>
