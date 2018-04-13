@@ -66,12 +66,13 @@ if (cookies != null) {
 	    var senha  = document.getElementById("senha").value;
 	    if(usuario=="usuario" && senha=="senha") {
 	    	document.getElementById("msg").innerHTML = "Login autorizado!";
+		document.getElementById('buttonLogin').click();
 	    } else {
 	    	document.getElementById("msg").innerHTML = "Login não autorizado!";
 	    }
 	}
 </script>
- <span class=""><a href="/_saml?RelayState=%2F" class="button center">Login via Salesforce</a></span>
+ <span class=""><a id="buttonLogin" href="/_saml?RelayState=%2F" class="button center">Login via Salesforce</a></span>
  </div>
 
 <% } %>
