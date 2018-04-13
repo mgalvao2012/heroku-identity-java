@@ -54,15 +54,20 @@ if (cookies != null) {
 	<input type="text" id="senha" name="senha">
 	<br/>
 	<input type="button" value="Enviar" onclick="ValidaUsuario();">
+	<br/>
+	<div id="msg"></div>
+		
+	
 </div>
+	 <br/><br/>
 <script>
 	function ValidaUsuario() {
 	    var usuario = document.getElementById("usuario").value;
 	    var senha  = document.getElementById("senha").value;
 	    if(usuario=="usuario" && senha=="senha") {
-	    	window.location.href = "login-autorizado.html";
+	    	document.getElementById("msg").innerHTML = "Login autorizado!";
 	    } else {
-	    	window.location.href = "login-nao-autorizado.html";
+	    	document.getElementById("msg").innerHTML = "Login não autorizado!";
 	    }
 	}
 </script>
