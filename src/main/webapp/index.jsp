@@ -14,7 +14,6 @@ if (cookies != null) {
 
 <html>
 <head>
-<meta charset="UTF-8">
 <link href="/css/style.css" rel="stylesheet" type="text/css">
 </head>
 
@@ -69,7 +68,7 @@ if (cookies != null) {
 	    	document.getElementById("msg").innerHTML = "Login autorizado!";
 		document.getElementById('buttonLogin').click();
 	    } else {
-	    	document.getElementById("msg").innerHTML = "Login não autorizado!";
+	    	document.getElementById("msg").innerHTML = "Login nao autorizado!";
 	    }
 	}
 </script>
