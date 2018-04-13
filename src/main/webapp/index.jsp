@@ -1,3 +1,4 @@
+<meta charset="UTF-8">
 <%@ page import="com.salesforce.saml.Identity,com.salesforce.util.Bag,java.util.Set,java.util.Iterator,java.util.ArrayList" %>
 <%
 Identity identity = null;
@@ -68,7 +69,7 @@ if (cookies != null) {
 	    	document.getElementById("msg").innerHTML = "Login autorizado!";
 		document.getElementById('buttonLogin').click();
 	    } else {
-	    	document.getElementById("msg").innerHTML = "Login não autorizado!";
+	    	document.getElementById("msg").innerHTML = "Login no autorizado!";
 	    }
 	}
 </script>
