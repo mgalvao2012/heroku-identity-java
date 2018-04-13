@@ -46,6 +46,26 @@ if (cookies != null) {
 </center>
 <% } else {  %>
  <div class="centered">
+<div>
+	<label for="usuario">Usuario:</label>
+	<input type="text" id="usuario" name="usuario">
+	<br/>
+	<label for="senha">Senha:</label>
+	<input type="text" id="senha" name="senha">
+	<br/>
+	<input type="button" value="Enviar" onclick="ValidaUsuario();">
+</div>
+<script>
+	function ValidaUsuario() {
+	    var usuario = document.getElementById("usuario").value;
+	    var senha  = document.getElementById("senha").value;
+	    if(usuario=="usuario" && senha=="senha") {
+	    	window.location.href = "login-autorizado.html";
+	    } else {
+	    	window.location.href = "login-nao-autorizado.html";
+	    }
+	}
+</script>
  <span class=""><a href="/_saml?RelayState=%2F" class="button center">Login via Salesforce</a></span>
  </div>
 
